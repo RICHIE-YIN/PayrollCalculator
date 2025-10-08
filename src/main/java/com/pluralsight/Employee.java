@@ -46,7 +46,7 @@ public class Employee {
         this.payRate = payRate;
     }
 
-    public void getGrossPay() {
-        System.out.println(hoursWorked * payRate);
+    public double getGrossPay(double hoursWorked, double payRate) {
+        return hoursWorked * payRate;
     }
 }

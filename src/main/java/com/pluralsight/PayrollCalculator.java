@@ -19,8 +19,8 @@ public class PayrollCalculator {
             while((input = bufReader.readLine()) != null) {
                 System.out.println(input);
                 String [] arr = input.split("\\|");
-                Employee employee = new Employee(Integer.parseInt(arr[0]), arr[1], Double.parseDouble(arr[3]), Double.parseDouble(arr[3]));
-                System.out.printf("Employee ID: %s\nEmployee name %s\nEmployee hours worked: %s\nEmployee pay rate: %s\n\n", employee.getEmployeeId(), employee.getName(), employee.getHoursWorked(), employee.getPayRate());
+                Employee employee = new Employee(Integer.parseInt(arr[0]), arr[1], Double.parseDouble(arr[2]), Double.parseDouble(arr[3]));
+                System.out.printf("Employee ID: %s\nEmployee name %s\nEmployee gross pay: %s\n\n", employee.getEmployeeId(), employee.getName(), employee.getGrossPay(employee.getHoursWorked(), employee.getPayRate()));
             }
 
 
