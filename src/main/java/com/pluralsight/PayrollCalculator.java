@@ -13,7 +13,7 @@ public class PayrollCalculator {
     public static void main(String[] args) {
 
         try{
-            FileReader fileReader = new FileReader("C:\\Users\\Khm3o\\pluralsight\\workbook-3\\PayrollCalculator\\src\\main\\java\\com\\pluralsight\\payroll.csv");
+            FileReader fileReader = new FileReader("src/main/java/com/pluralsight/payroll.csv");
             BufferedReader bufReader = new BufferedReader(fileReader);
             String input;
             while((input = bufReader.readLine()) != null) {
